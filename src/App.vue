@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <myHeader />
+    <myMain />
     <myFooter />
   </div>
 </template>
@@ -8,11 +9,13 @@
 <script>
 import myHeader from "@/components/header";
 import myFooter from "@/components/footer";
+import myMain from "@/views/main";
 export default {
   name: "App",
   components: {
     myHeader,
     myFooter,
+    myMain,
   },
 };
 </script>
