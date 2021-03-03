@@ -1,7 +1,7 @@
 <template>
-  <b-navbar variant="info"
-    ><h1>支払金額シミュレーション・デモサイト</h1>
-  </b-navbar>
+  <v-app-bar class="header" app color="primary" dark>
+    <h1>支払額シミュレーションデモ</h1>
+  </v-app-bar>
 </template>
 
 <script>

@@ -1,56 +1,25 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
-
+    <myHeader />
     <v-main>
-      <HelloWorld/>
+      <myContents />
     </v-main>
+    <myFooter />
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import myHeader from "@/components/header";
+import myFooter from "@/components/footer";
+import myContents from "@/views/contents";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
-    HelloWorld,
+    myHeader,
+    myContents,
+    myFooter,
   },
 
   data: () => ({
@@ -58,3 +27,14 @@ export default {
   }),
 };
 </script>
+
+<style lang="scss">
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+</style>

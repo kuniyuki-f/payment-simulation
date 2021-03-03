@@ -1,7 +1,14 @@
 <template>
-  <div>
-    <input type="range" v-model="innerVal" :min="min" :max="max" />
-    <vue-slider v-model="innerVal" :min="min" :max="max" />
+  <div class="v-slider-wrapper">
+    <v-slider
+      v-model="innerVal"
+      :value="innerVal"
+      :min="min"
+      :max="max"
+      :step="step"
+      color="#FAFAFA"
+      track-color="#9E9E9E"
+    />
   </div>
 </template>
 
@@ -34,4 +41,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.v-slider-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 5.6rem;
+
+  margin: auto;
+  padding: 2rem 2rem 0 2rem;
+
+  border-radius: 0.5rem 0.5rem 2rem 2rem;
+}
 </style>
