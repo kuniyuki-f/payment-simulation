@@ -276,7 +276,7 @@ export default {
   height: 100%;
   width: 100%;
   margin: 0 auto 0 auto;
-  padding: 0.1px 10% 2rem 10%;
+  padding: 0.1px 10% 4rem 10%;
 
   background-color: #eceff1;
 
